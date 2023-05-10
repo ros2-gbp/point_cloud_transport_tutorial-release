@@ -1,19 +1,18 @@
-<package>
-    <name>point_cloud_transport_tutorial</name>
-    <version>0.1.0</version>
-    <description> Tutorial for point_cloud_transport. </description>
-    <author> Jakub Paplham </author>
-    <maintainer email="paplhjak@fel.cvut.cz">Jakub Paplham</maintainer>
-    <license> BSD </license>
+<package format="3">
+  <name>point_cloud_transport_tutorial</name>
+  <version>1.0.0</version>
+  <description>Tutorial for point_cloud_transport.</description>
+  <author>Jakub Paplham</author>
+  <maintainer email="peckama2@fel.cvut.cz">Martin Pecka</maintainer>
+  <license>BSD</license>
 
-    <build_depend>point_cloud_transport</build_depend>
-    <build_depend>sensor_msgs</build_depend>
-    <build_depend>rosbag</build_depend>
+  <buildtool_depend>catkin</buildtool_depend>
 
-    <run_depend>point_cloud_transport</run_depend>
-    <run_depend>sensor_msgs</run_depend>
-    <run_depend>rosbag</run_depend>
+  <build_depend>point_cloud_transport</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>rosbag</build_depend>
 
-
-    <buildtool_depend>catkin</buildtool_depend>
+  <exec_depend>point_cloud_transport</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>rosbag</exec_depend>
 </package>
