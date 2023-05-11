@@ -1,12 +1,14 @@
 // SPDX-License-Identifier: BSD-3-Clause
 // SPDX-FileCopyrightText: Czech Technical University in Prague .. 2019, paplhjak
 
+#include <cras_cpp_common/log_utils.h>
 #include <dynamic_reconfigure/Config.h>
 #include <point_cloud_transport/point_cloud_codec.h>
 #include <ros/console.h>
 #include <ros/time.h>
 #include <rosbag/bag.h>
 #include <rosbag/view.h>
+#include <rosgraph_msgs/Log.h>
 #include <sensor_msgs/PointCloud2.h>
 
 int main(int argc, char** argv)
@@ -91,6 +93,17 @@ int main(int argc, char** argv)
       static char* errorString = nullptr;
       cras::allocator_t errorStringAllocator = [](size_t size) {
         errorString = new char[size]; return reinterpret_cast<void*>(errorString); };
+
+      // Log messages are output as serialized rosgraph_msgs::Log messages.
+      static std::vector<cras::ShapeShifter> logMessages;
+      cras::allocator_t logMessagesAllocator = [](size_t size) {
+        logMessages.emplace_back();
+        cras::resizeBuffer(logMessages.back(), size);
+        using namespace rosgraph_msgs;
+        using namespace ros::message_traits;
+        logMessages.back().morph(MD5Sum<Log>::value(), DataType<Log>::value(), Definition<Log>::value(), "0");
+        return reinterpret_cast<void*>(cras::getBuffer(logMessages.back()));
+      };
       
       // Call the C API
       bool success = pointCloudTransportCodecsDecode(
@@ -98,9 +111,17 @@ int main(int argc, char** argv)
           cras::getBufferLength(msg->value()), cras::getBuffer(msg->value()), raw.height, raw.width,
           numFields, fieldNamesAllocator, fieldOffsetsAllocator, fieldDatatypesAllocator, fieldCountsAllocator,
           raw.is_bigendian, raw.point_step, raw.row_step, dataAllocator, raw.is_dense,
-          cras::getBufferLength(configShifter), cras::getBuffer(configShifter), errorStringAllocator
+          cras::getBufferLength(configShifter), cras::getBuffer(configShifter),
+          errorStringAllocator, logMessagesAllocator
       );
 
+      // Report all log messages the API call would like to print
+      for (const auto& logShifter : logMessages)
+      {
+        const auto& logMsg = logShifter.instantiate<rosgraph_msgs::Log>();
+        ROS_LOG(cras::rosgraphMsgLevelToLogLevel(logMsg->level), ROSCONSOLE_DEFAULT_NAME, "%s", logMsg->msg.c_str());
+      }
+      
       if (success)
       {
         // Reconstruct the fields

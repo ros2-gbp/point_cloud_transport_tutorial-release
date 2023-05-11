@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.10.2)
 project(point_cloud_transport_tutorial)
 
-find_package(catkin REQUIRED COMPONENTS cras_cpp_common point_cloud_transport rosbag sensor_msgs topic_tools)
+find_package(catkin REQUIRED COMPONENTS cras_cpp_common point_cloud_transport rosbag rosgraph_msgs sensor_msgs topic_tools)
 
 catkin_package()
 
