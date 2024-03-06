@@ -18,7 +18,7 @@ tracks:
     last_version: 0.0.1
     name: point_cloud_transport_tutorial
     patches: null
-    release_inc: '1'
+    release_inc: '2'
     release_repo_url: https://github.com/ros2-gbp/point_cloud_transport_tutorial-release.git
     release_tag: :{version}
     ros_distro: rolling
