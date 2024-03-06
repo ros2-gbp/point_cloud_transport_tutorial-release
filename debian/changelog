@@ -1,0 +1,14 @@
+ros-rolling-point-cloud-transport-tutorial (0.0.1-2noble) noble; urgency=high
+
+  * Added CI (#7 <https://github.com/ros-perception/point_cloud_transport_tutorial/issues/7>)
+  * Installed scripts, some minor fixes and warnings (#6 <https://github.com/ros-perception/point_cloud_transport_tutorial/issues/6>)
+  * ROS2 Port (#2 <https://github.com/ros-perception/point_cloud_transport_tutorial/issues/2>)
+    Co-authored-by: Alejandro Hernández Cordero <mailto:ahcorde@gmail.com>
+  * Report log messages from transport C API.
+  * Added encoder/decoder tutorial.
+  * Initial cleanup before releasing. No substantial changes made.
+  * Contributors: Alejandro Hernández Cordero, john-maidbot
+
+ -- John D'Angelo <john.dangelo@tailos.com>  Mon, 09 Oct 2023 00:00:00 -0000
+
+

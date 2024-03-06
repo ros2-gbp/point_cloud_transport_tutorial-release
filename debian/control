@@ -1,0 +1,12 @@
+Source: ros-rolling-point-cloud-transport-tutorial
+Section: misc
+Priority: optional
+Maintainer: John D'Angelo <john.dangelo@tailos.com>
+Build-Depends: debhelper (>= 9.0.0), ros-rolling-ament-cmake-copyright <!nocheck>, ros-rolling-ament-cmake-cppcheck <!nocheck>, ros-rolling-ament-cmake-cpplint <!nocheck>, ros-rolling-ament-cmake-lint-cmake <!nocheck>, ros-rolling-ament-cmake-ros, ros-rolling-ament-cmake-uncrustify <!nocheck>, ros-rolling-ament-cmake-xmllint <!nocheck>, ros-rolling-point-cloud-transport, ros-rolling-rclcpp, ros-rolling-rcpputils, ros-rolling-rosbag2-cpp, ros-rolling-sensor-msgs, ros-rolling-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-rolling-point-cloud-transport-tutorial
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-rolling-point-cloud-transport, ros-rolling-point-cloud-transport-plugins, ros-rolling-rclcpp, ros-rolling-rcpputils, ros-rolling-rosbag2-cpp, ros-rolling-sensor-msgs, ros-rolling-ros-workspace
+Description: Tutorial for point_cloud_transport.
