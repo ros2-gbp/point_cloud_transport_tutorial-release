@@ -1,0 +1,12 @@
+Source: ros-jazzy-point-cloud-transport-tutorial
+Section: misc
+Priority: optional
+Maintainer: John D'Angelo <john.dangelo@tailos.com>
+Build-Depends: debhelper (>= 9.0.0), ament-cmake-copyright <!nocheck>, ament-cmake-cppcheck <!nocheck>, ament-cmake-cpplint <!nocheck>, ament-cmake-lint-cmake <!nocheck>, ament-cmake-ros, ament-cmake-uncrustify <!nocheck>, ament-cmake-xmllint <!nocheck>, librcpputils-dev, libsensor-msgs-dev, python3-sensor-msgs, ros-jazzy-point-cloud-transport, ros-jazzy-rclcpp, ros-jazzy-rosbag2-cpp, ros-sensor-msgs, ros-jazzy-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-jazzy-point-cloud-transport-tutorial
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, librcpputils-dev, libsensor-msgs-dev, python3-sensor-msgs, ros-jazzy-point-cloud-transport, ros-jazzy-point-cloud-transport-plugins, ros-jazzy-rclcpp, ros-jazzy-rosbag2-cpp, ros-sensor-msgs, ros-jazzy-ros-workspace
+Description: Tutorial for point_cloud_transport.
