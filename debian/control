@@ -1,0 +1,12 @@
+Source: ros-kilted-point-cloud-transport-tutorial
+Section: misc
+Priority: optional
+Maintainer: John D'Angelo <john.dangelo@tailos.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kilted-ament-cmake-copyright <!nocheck>, ros-kilted-ament-cmake-cppcheck <!nocheck>, ros-kilted-ament-cmake-cpplint <!nocheck>, ros-kilted-ament-cmake-lint-cmake <!nocheck>, ros-kilted-ament-cmake-ros, ros-kilted-ament-cmake-uncrustify <!nocheck>, ros-kilted-ament-cmake-xmllint <!nocheck>, ros-kilted-point-cloud-transport, ros-kilted-rclcpp, ros-kilted-rcpputils, ros-kilted-rosbag2-cpp, ros-kilted-sensor-msgs, ros-kilted-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-kilted-point-cloud-transport-tutorial
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kilted-point-cloud-transport, ros-kilted-point-cloud-transport-plugins, ros-kilted-rclcpp, ros-kilted-rcpputils, ros-kilted-rosbag2-cpp, ros-kilted-sensor-msgs, ros-kilted-ros-workspace
+Description: Tutorial for point_cloud_transport.
