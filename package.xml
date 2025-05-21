@@ -1,7 +1,7 @@
 <package format="3">
   <name>point_cloud_transport_tutorial</name>
 
-  <version>0.0.2</version>
+  <version>0.0.3</version>
 
   <description>Tutorial for point_cloud_transport.</description>
 
@@ -15,14 +15,12 @@
 
   <build_depend>point_cloud_transport</build_depend>
   <build_depend>rclcpp</build_depend>
-  <build_depend>rcpputils</build_depend>
   <build_depend>rosbag2_cpp</build_depend>
   <build_depend>sensor_msgs</build_depend>
 
   <exec_depend>point_cloud_transport_plugins</exec_depend>
   <exec_depend>point_cloud_transport</exec_depend>
   <exec_depend>rclcpp</exec_depend>
-  <exec_depend>rcpputils</exec_depend>
   <exec_depend>rosbag2_cpp</exec_depend>
   <exec_depend>sensor_msgs</exec_depend>
 
