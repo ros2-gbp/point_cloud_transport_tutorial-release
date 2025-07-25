@@ -1,3 +1,26 @@
+## point_cloud_transport_tutorial (rolling) - 0.0.4-1
+
+The packages in the `point_cloud_transport_tutorial` repository were released into the `rolling` distro by running `/usr/bin/bloom-release --rosdistro rolling --track rolling point_cloud_transport_tutorial` on `Fri, 25 Jul 2025 11:41:46 -0000`
+
+The `point_cloud_transport_tutorial` package was released.
+
+Version of package(s) in repository `point_cloud_transport_tutorial`:
+
+- upstream repository: https://github.com/ros-perception/point_cloud_transport_tutorial
+- release repository: https://github.com/ros2-gbp/point_cloud_transport_tutorial-release.git
+- rosdistro version: `0.0.3-1`
+- old version: `0.0.3-1`
+- new version: `0.0.4-1`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.25.1`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## point_cloud_transport_tutorial (rolling) - 0.0.3-1
 
 The packages in the `point_cloud_transport_tutorial` repository were released into the `rolling` distro by running `/usr/bin/bloom-release --rosdistro rolling --track rolling point_cloud_transport_tutorial` on `Wed, 21 May 2025 14:38:29 -0000`
