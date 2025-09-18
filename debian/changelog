@@ -1,0 +1,45 @@
+ros-rolling-point-cloud-transport-tutorial (0.0.5-1noble) noble; urgency=high
+
+  * Removed rclcpp::spin_some deprecation warning (#17 <https://github.com/ros-perception/point_cloud_transport_tutorial/issues/17>)
+  * Contributors: Alejandro Hernández Cordero
+
+ -- John D'Angelo <john.dangelo@tailos.com>  Wed, 17 Sep 2025 22:00:00 -0000
+
+ros-rolling-point-cloud-transport-tutorial (0.0.4-1noble) noble; urgency=high
+
+  * Removed deprecation warnings (#16 <https://github.com/ros-perception/point_cloud_transport_tutorial/issues/16>)
+  * Contributors: Alejandro Hernández Cordero
+
+ -- John D'Angelo <john.dangelo@tailos.com>  Thu, 24 Jul 2025 22:00:00 -0000
+
+ros-rolling-point-cloud-transport-tutorial (0.0.3-1noble) noble; urgency=high
+
+  * Fixed CI (#12 <https://github.com/ros-perception/point_cloud_transport_tutorial/issues/12>)
+  * Use target_link_libraries instead of ament_target_dependencies (#11 <https://github.com/ros-perception/point_cloud_transport_tutorial/issues/11>)
+  * Replaced deprecated rcpputils::path (#10 <https://github.com/ros-perception/point_cloud_transport_tutorial/issues/10>)
+  * Contributors: Alejandro Hernández Cordero
+
+ -- John D'Angelo <john.dangelo@tailos.com>  Tue, 20 May 2025 22:00:00 -0000
+
+ros-rolling-point-cloud-transport-tutorial (0.0.2-1noble) noble; urgency=high
+
+  * point_cloud_Transport_plugins is not a build dependency of this package (#9 <https://github.com/ros-perception/point_cloud_transport_tutorial/issues/9>)
+  * Added humble CI (#8 <https://github.com/ros-perception/point_cloud_transport_tutorial/issues/8>)
+  * Contributors: Alejandro Hernández Cordero, john-maidbot
+
+ -- John D'Angelo <john.dangelo@tailos.com>  Sat, 18 Mar 2023 23:00:00 -0000
+
+ros-rolling-point-cloud-transport-tutorial (0.0.1-1noble) noble; urgency=high
+
+  * Added CI (#7 <https://github.com/ros-perception/point_cloud_transport_tutorial/issues/7>)
+  * Installed scripts, some minor fixes and warnings (#6 <https://github.com/ros-perception/point_cloud_transport_tutorial/issues/6>)
+  * ROS2 Port (#2 <https://github.com/ros-perception/point_cloud_transport_tutorial/issues/2>)
+    Co-authored-by: Alejandro Hernández Cordero <mailto:ahcorde@gmail.com>
+  * Report log messages from transport C API.
+  * Added encoder/decoder tutorial.
+  * Initial cleanup before releasing. No substantial changes made.
+  * Contributors: Alejandro Hernández Cordero, john-maidbot
+
+ -- John D'Angelo <john.dangelo@tailos.com>  Sun, 08 Oct 2023 22:00:00 -0000
+
+
