@@ -1,0 +1,12 @@
+Source: ros-lyrical-point-cloud-transport-tutorial
+Section: misc
+Priority: optional
+Maintainer: John D'Angelo <john.dangelo@tailos.com>
+Build-Depends: debhelper (>= 9.0.0), ros-lyrical-ament-cmake-copyright <!nocheck>, ros-lyrical-ament-cmake-cppcheck <!nocheck>, ros-lyrical-ament-cmake-cpplint <!nocheck>, ros-lyrical-ament-cmake-lint-cmake <!nocheck>, ros-lyrical-ament-cmake-ros, ros-lyrical-ament-cmake-uncrustify <!nocheck>, ros-lyrical-ament-cmake-xmllint <!nocheck>, ros-lyrical-point-cloud-transport, ros-lyrical-rclcpp, ros-lyrical-rosbag2-cpp, ros-lyrical-sensor-msgs, ros-lyrical-ros-workspace
+Homepage: https://index.ros.org/p/point_cloud_transport_tutorial/#lyrical
+Standards-Version: 3.9.2
+
+Package: ros-lyrical-point-cloud-transport-tutorial
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-lyrical-point-cloud-transport, ros-lyrical-point-cloud-transport-plugins, ros-lyrical-rclcpp, ros-lyrical-rosbag2-cpp, ros-lyrical-sensor-msgs, ros-lyrical-ros-workspace
+Description: Tutorial for point_cloud_transport.
